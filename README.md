@@ -1,4 +1,3 @@
-# helpful-scripts
 Helpful scripts for developers
 
 - docker-info: show some counts related to images and containers status
