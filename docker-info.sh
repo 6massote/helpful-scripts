@@ -1,3 +1,10 @@
+#!/bin/bash
+
+if ! which docker; then
+    echo '[ERROR] Docker not installed.\n';
+    exit 1;
+fi
+
 echo "Docker count infos: "
 echo "    All images: $(docker images -q | grep -c -e .)"
 echo "    Dangling images: $(docker images -q -f 'dangling=true' | grep -c -e .)"
